@@ -41,6 +41,18 @@ Bu doğrultuda proje, aşağıdaki teknolojilerin birleşimini amaçlamaktadır:
 * 🧬 Dijital İkiz (Digital Twin)
 
 ---
+## 🔬 Yenilikçi Katkı
+
+Bu proje yalnızca nesne tespiti yapmakla kalmayıp:
+
+- PPE kullanımını **nicel olarak analiz eder**
+- **risk skoru üretir**
+- **aksiyon önerileri sunar**
+- gelecekte **dijital ikiz ile senaryo simülasyonu** yapmayı hedefler
+
+Bu yönüyle klasik görüntü işleme sistemlerinden ayrılmaktadır.
+
+---
 
 
 ## 🛠️ Kullanılan Teknolojiler
