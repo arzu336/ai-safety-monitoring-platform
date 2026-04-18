@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-safebuild-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ai-safebuild-backend
+  template:
+    metadata:
+      labels:
+        app: ai-safebuild-backend
+    spec:
+      containers:
+        - name: backend
+          image: ai-construction-safety-monitor-backend:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8000

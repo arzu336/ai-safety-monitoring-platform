@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-safebuild-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ai-safebuild-frontend
+  template:
+    metadata:
+      labels:
+        app: ai-safebuild-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: ai-construction-safety-monitor-frontend:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8501
+          env:
+            - name: API_URL
+              value: "http://backend-service:8000"
